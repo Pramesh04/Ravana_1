@@ -137,7 +137,7 @@ node .
 4. Jangan salah gunakan script ini!
 
 ---------
-
+<img src="https://i.ibb.co/6tCrPD6/image-downloader-1654443961039.gif" alt="nz" width="600"/>
 
 ## Thanks To
 ```bash
@@ -153,3 +153,5 @@ Thanks To :
 - Ekuzika (Author Gura-MD)
 - David (Author Rest Api Itsrose)
 - Dan Semua Yang  Berkontribusi Dalam Pengambangan Script Ini 
+
+<img src="https://i.ibb.co/6tCrPD6/image-downloader-1654443961039.gif" alt="nz" width="600"/>
