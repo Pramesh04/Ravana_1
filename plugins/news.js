@@ -1,5 +1,4 @@
 let handler = async (m, { conn, usedPrefix, text, command }) => {
-m.react('🚔') 
 const bijjo = await fetchJson(`https://darkapi--technicalhacke4.repl.co/hirunews`);
 
 

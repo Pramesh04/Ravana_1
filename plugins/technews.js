@@ -1,5 +1,4 @@
 let handler = async (m, { conn, usedPrefix, text, command }) => {
-m.react('🚔') 
 const tech = axios.get("https://darkapi--technicalhacke4.repl.co/sinhala-technews");
 
 reply(`${tech.data.result.decs}`)

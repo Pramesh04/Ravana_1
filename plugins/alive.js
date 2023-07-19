@@ -1,5 +1,4 @@
 let handler = async (m, { conn, usedPrefix, text, command }) => {
-m.react('🪄') 
 let aliveMessage = {
                 image: {
                     url: "https://telegra.ph/file/d11473963441a9c19841a.jpg",
