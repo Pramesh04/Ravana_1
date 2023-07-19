@@ -32,6 +32,7 @@ await conn.sendMessage(m.chat,  {
                 fileName: `alive.mp3`,
 
             }, m)
+await conn.sendMessage(m.chat, aliveMessage ,m)
 
 
 }
