@@ -1,4 +1,13 @@
-console.log('Memulai...')
+console.log("💡I AM KING RAVANA MD💡\n\n\n 🌍😈KING IS BACK😈🌍.........");
+
+console.log(`
+▬▬▬..◙..▬▬▬
+   ▂▄▄▄▓▄▄▂
+◢◤█▀▀████▄▄▄▄     ◢◤
+█▄ █ー  ███▀▀▀▀▀▀▀╬
+◥█████◤
+══╩══╩══                                🥀king RAVANA MD🥀
+`);
 
 import yargs from 'yargs'
 import cfonts from 'cfonts'
