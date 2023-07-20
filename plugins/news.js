@@ -1,24 +1,19 @@
-let handler = async (m, { conn, usedPrefix, text, command }) => {
-const bijjo = await fetchJson(`https://darkapi--technicalhacke4.repl.co/hirunews`);
-
-
-   const fk = `*◈━━━━━━━━━━━━━◈*\n  *𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*\n              _*𝙷𝙸𝚁𝚄 𝙽𝙴𝚆𝚂*_\n*◈━━━━━━━━━━━━━◈*\n\n${bijjo.result.title}\n\n⏰𝙏𝙄𝙈𝙀⏰: _${scrape.data.result.time}_`
+let pramesh = async (m, { conn, usedPrefix, text, command }) => {
+conn.sendMessage(from, { react: { text: `🚔`, key: mek.key }})
 
 let aliveMessage = {
                 image: {
-                    url: `https://github.com/Pramesh04/sup_to_ravana/blob/main/king_RAVANA_MD.jpg`,
+                    url: "https://telegra.ph/file/d11473963441a9c19841a.jpg",
                 },
-                caption: fk,
+                caption: `menu එක දෙනකන් හිටපන් යකෝ ඉවසලා\n\n*𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*`,
                 footer: `*𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*`,
                 headerType: 4,
             };
 await conn.sendMessage(m.chat, aliveMessage ,m)
 }
-
-
-handler.help = ['hirunews']
-handler.tags = ['main']
-handler.command = ['hirunews']
-handler.premium = true
+pramesh.help = "menu"
+pramesh.tags = "main"
+pramesh.command = "menu"
+pramesh.premium = true
 
 export default handler
