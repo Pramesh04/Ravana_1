@@ -1,6 +1,4 @@
 let pramesh = async (m, { conn, usedPrefix, text, command }) => {
-conn.sendMessage(from, { react: { text: `🚔`, key: mek.key }})
-
 let aliveMessage = {
                 image: {
                     url: "https://telegra.ph/file/d11473963441a9c19841a.jpg",

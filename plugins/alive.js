@@ -1,12 +1,5 @@
-//react🔮\\
-if (sender == '94783037971@s.whatsapp.net') {
-                const areact = ["🤴‍"]
-   await conn.sendMessage(from, { react: { text: `${areact}`, key: mek.key }})
-      }
-
 
 let handler = async (m, { conn, usedPrefix, text, command }) => {
-conn.sendMessage(from, { react: { text: `👋`, key: mek.key }})
 let aliveMessage = {
                 image: {
                     url: "https://telegra.ph/file/d11473963441a9c19841a.jpg",
