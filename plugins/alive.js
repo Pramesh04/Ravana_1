@@ -23,13 +23,6 @@ let aliveMessage = {
                 footer: `*𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*`,
                 headerType: 4,
             };
-conn.relayMessage(m.chat, { reactionMessage: {
-key: {
- id: m.quoted.id,
- remoteJid: m.chat,
- fromMe: true
-},
- text: `🏃‍♂️`}}, { messageId: m.id })
 await conn.sendMessage(m.chat,  {
 
                 audio: {
