@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, args }) => {
-	if (!args[0]) throw 'Input URL' 
+	if (!args[0]) throw '🧗‍♀කරුණාකර link එකක් ඇතුලත් කරන්න🧗‍♀' 
 	if (!/https?:\/\/(www\.)?mediafire\.com/.test(args[0])) throw 'Linknya?' 
 	let res = await fetch(`https://api-xcoders.site/api/download/mediafire?url=${args[0]}&apikey=${global.xcode }`)
 	let data = await res.json()

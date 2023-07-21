@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 const regex = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
 let handler = async (m, {conn, text, args, usedPrefix, command }) => {
-    if (!args[0]) throw `Example user ${usedPrefix}${command} Zeltoria/Clara-MD`
+    if (!args[0]) throw `Example user ${usedPrefix}${command} *𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*`
     let [usr, rep] = text.split`/`
     let url = `https://api.github.com/repos/${encodeURIComponent(usr)}/${encodeURIComponent(rep)}/zipball`
     let name = `${encodeURIComponent(rep)}.zip`
