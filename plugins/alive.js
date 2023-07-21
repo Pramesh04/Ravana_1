@@ -1,4 +1,7 @@
-
+ import fetch from 'node-fetch'
+ 
+ let name = await conn.getName(m.sender)
+ 
 let handler = async (m, { conn, usedPrefix, text, command }) => {
 let aliveMessage = {
                 image: {
@@ -9,7 +12,7 @@ let aliveMessage = {
 *◈━━━━━━━━━━━━━◈*
 
    ~▰▰▰▰▰▰▰▰▰▰▰~
-▮▸*⃝𝐡𝐢_* 𝐩𝐫𝐚𝐦𝐞𝐬𝐡
+▮▸*⃝𝐡𝐢_*  *${name}*
 ▮▸𝐢 𝐚𝐦 𝐜𝐨𝐦𝐦𝐢𝐧𝐠 𝐬𝐨𝐨𝐧
 ▮▸𝐩𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲_𝙿𝚁𝙰𝙼𝙴𝚂𝙷 𝙻𝙸𝙾𝙽 𝙱𝙾𝚃
 ▮▸𝐮𝐩𝐭𝐢𝐦𝐞 0.00001
@@ -20,6 +23,13 @@ let aliveMessage = {
                 footer: `*𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*`,
                 headerType: 4,
             };
+conn.relayMessage(m.chat, { reactionMessage: {
+key: {
+ id: m.quoted.id,
+ remoteJid: m.chat,
+ fromMe: true
+},
+ text: `🏃‍♂️`}}, { messageId: m.id })
 await conn.sendMessage(m.chat,  {
 
                 audio: {
@@ -41,7 +51,7 @@ await conn.sendMessage(m.chat, aliveMessage ,m)
 
 handler.help = ['alive']
 handler.tags = ['main']
-handler.command = ['alive']
+handler.command = /^(alive|pramesh)$/i
 handler.premium = true
 
 export default handler
