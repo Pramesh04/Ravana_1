@@ -1,6 +1,5 @@
  import fetch from 'node-fetch'
  
- let name = await conn.getName(m.sender)
  
 let handler = async (m, { conn, usedPrefix, text, command }) => {
 let aliveMessage = {
@@ -12,7 +11,7 @@ let aliveMessage = {
 *◈━━━━━━━━━━━━━◈*
 
    ~▰▰▰▰▰▰▰▰▰▰▰~
-▮▸*⃝𝐡𝐢_*  *${name}*
+▮▸*⃝𝐡𝐢_*  *බන්*
 ▮▸𝐢 𝐚𝐦 𝐜𝐨𝐦𝐦𝐢𝐧𝐠 𝐬𝐨𝐨𝐧
 ▮▸𝐩𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲_𝙿𝚁𝙰𝙼𝙴𝚂𝙷 𝙻𝙸𝙾𝙽 𝙱𝙾𝚃
 ▮▸𝐮𝐩𝐭𝐢𝐦𝐞 0.00001
