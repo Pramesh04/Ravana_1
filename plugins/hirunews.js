@@ -4,7 +4,7 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
 const aluth = await fetch("https://darkapi--technicalhacke4.repl.co/hirunews");
 const hirunews = aluth.json()
 
-const images = `${hirunews.result.image}`
+           const images = `${hirunews.result.image}`
            const title = `${hirunews.result.title}`
            const date = `${hirunews.result.time}`
            const news = `${hirunews.result.desc}`
