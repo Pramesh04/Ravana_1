@@ -10,7 +10,7 @@ const images = `${hirunews.result.image}`
            const news = `${hirunews.result.desc}`
 let aliveMessage = {
                 image: {
-                    url: ${images},
+                    url: `${images}`,
                 },
                 caption: `*◈━━━━━━━━━━━━━◈*   *𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*\n*◈━━━━━━━━━━━━━◈*\n\n☀𝙏𝙄𝙏𝙇𝙀☀_ *${title}*\n\n☀𝙉𝙀𝙒𝙎☀_ ${news}\n\n⌛𝙳𝙰𝚃𝙴⌛ _${date}_`,
                 footer: `*𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*`,
@@ -20,7 +20,7 @@ await conn.sendMessage(m.chat, aliveMessage ,m)
 }
 
 
-handler.help = ['hirunews']
+handler.help = ['hirunews','hn']
 handler.tags = ['main']
 handler.command = /^(hirunews|hn)$/i
 handler.premium = true
