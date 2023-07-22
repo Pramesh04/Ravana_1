@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { conn, usedPrefix, text, command }) => {
 const aluth = await fetch("https://darkapi--technicalhacke4.repl.co/hirunews");
-const bijjo = aluth.json()
+const hirunews = aluth.json()
 
 const images = `${hirunews.result.image}`
            const title = `${hirunews.result.title}`
@@ -20,7 +20,7 @@ await conn.sendMessage(m.chat, aliveMessage ,m)
 }
 
 
-handler.help = ['hirunews','hn']
+handler.help = ['hirunews']
 handler.tags = ['main']
 handler.command = /^(hirunews|hn)$/i
 handler.premium = true
