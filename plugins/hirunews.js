@@ -4,13 +4,15 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
 const aluth = await fetch("https://darkapi--technicalhacke4.repl.co/hirunews");
 const bijjo = aluth.json()
 
-   const fk = `${bijjo.result.title}`
-
+const images = `${hirunews.image}`
+           const title = `${hirunews.title}`
+           const date = `${hirunews.time}`
+           const news = `${hirunews.desc}`
 let aliveMessage = {
                 image: {
-                    url: "https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg",
+                    url: `${images}`,
                 },
-                caption: `*◈━━━━━━━━━━━━━◈*   *𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*\n*◈━━━━━━━━━━━━━◈*\n\n${bijjo.result.title}`,
+                caption: `*◈━━━━━━━━━━━━━◈*   *𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*\n*◈━━━━━━━━━━━━━◈*\n\n☀𝙏𝙄𝙏𝙇𝙀☀_ *${title}*\n\n☀𝙉𝙀𝙒𝙎☀_ ${news}\n\n⌛𝙳𝙰𝚃𝙴⌛ _${date}_`,
                 footer: `*𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*`,
                 headerType: 4,
             };
