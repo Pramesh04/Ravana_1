@@ -42,7 +42,7 @@ await conn.sendMessage(m.chat, aliveMessage ,m)
 
 
 handler.help = ['alive']
-handler.tags = ['main']
+handler.tags = ['alive']
 handler.command = /^(alive|pramesh)$/i
 handler.premium = true
 
