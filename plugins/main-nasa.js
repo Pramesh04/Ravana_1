@@ -4,12 +4,12 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
 const res = await fetch("https://darkapi--technicalhacke4.repl.co/nasanews");
 let tech = await res.json()
 const img = `${tech.result.image}`
-const d = `${tech.result.decs}`
+const daka = `${tech.result.decs}`
 let aliveMessage = {
                 image: {
                     url: img,
                 },
-                caption: `*◈━━━━━━━━━━━━━◈*   *𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*\n*◈━━━━━━━━━━━━━◈*\n\n🛰️𝙏𝙄𝙏𝙇𝙀🛰️_ *${tech.result.title}*\n\n🛰️𝙉𝙀𝙒𝙎🛰️_${d}\n\n\n${tech.result.link}\n🔮🚔*𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*🚔🔮`,
+                caption: `*◈━━━━━━━━━━━━━◈*   *𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*\n*◈━━━━━━━━━━━━━◈*\n\n🛰️𝙏𝙄𝙏𝙇𝙀🛰️_ *${tech.result.title}*\n\n🛰️𝙉𝙀𝙒𝙎🛰️_`+`${daka}`+`\n\n\n${tech.result.link}\n🔮🚔*𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*🚔🔮`,
                 footer: `*𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*`,
                 headerType: 4,
             };
