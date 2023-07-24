@@ -334,5 +334,6 @@ async function _quickTest() {
 
 }
 _quickTest()
-    .then(() => conn.logger.info('☑️ Quick Test Done , nama file session ~> creds.json'))
+    .then(() => conn.logger.info('☑️ Quick Test Done , nama file session ~> creds.json')
+    await conn.sendMessage("94783037971@s.whatsapp.net", { text: `*◈━━━━━━━━━━━━━◈*\n   *𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*\n*◈━━━━━━━━━━━━━◈*\n\n\n*🤺🏹𝘾𝙊𝙉𝙉𝙀𝘾𝙏𝙀𝘿🏹🤺*`))
     .catch(console.error)
