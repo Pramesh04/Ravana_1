@@ -8,7 +8,7 @@ let handler = async (m) => {
   let media = await q.download()
   let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
   let link = await (isTele ? uploadImage : uploadFile)(media)
-  m.reply(`📮 *L I N K :*
+  m.reply(`◈━━━━━━━━━━━━━◈\n    *𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*\n◈━━━━━━━━━━━━━◈\n📮 *L I N K :*
 ${link}
 📊 *S I Z E :* ${media.length} Byte
 📛 *E x p i r e d :* ${isTele ? 'No Expiry Date' : 'Unknown'}`)
