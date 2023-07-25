@@ -201,9 +201,9 @@ let tags = {
     throw e
   }
 }
-handler.help = ['allmenu']
+handler.help = ['allmenu','a','menu']
 handler.tags = ['main']
-handler.command = /^(menu|help|\?)$/i
+handler.command = /^(menu|help|a|allmenu|\?)$/i
 
 handler.register = false
 handler.exp = 3
