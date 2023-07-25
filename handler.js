@@ -549,10 +549,6 @@ export async function handler(chatUpdate) {
                     fail('mods', m, this)
                     continue
                 }
-                if (plugin.premium && !isPrems) { // Premium
-                    fail('premium', m, this)
-                    continue
-                }
                 if (plugin.group && !m.isGroup) { // Group Only
                     fail('group', m, this)
                     continue
@@ -809,7 +805,6 @@ let msg = {
         rowner: 'Ngapain Kak?, Fitur Ini Khusus Developerku',
         owner: 'Ngapain Kak?, Fitur Ini Khusus Ownerku',
         mods: 'Fitur Ini Khusus Moderator',
-        premium: 'Fitur Ini Khusus Premium User',
         group: 'Fitur Ini Hanya Bisa Digunakan Di Grup',       botAdmin: 'Jadikan Lia Sebagai Admin Terlebih Dahulu Agar Bisa Menggunakan Fitur Ini',
         restrict: 'Restict Belum Di Nyalakan Untuk Chat Ini'}[type]
   if (msg) return conn.sendMessage(m.chat, { image : { url : nyaww }, caption : msg }, m)
