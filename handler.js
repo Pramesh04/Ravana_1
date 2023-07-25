@@ -614,9 +614,6 @@ export async function handler(chatUpdate) {
                         m.limit = m.limit || plugin.limit || false
                 } catch (e) {
                     // Error occured
-const myno = [
-['94783037971', true]
-]
                     m.error = e
                     console.error(e)
                     if (e) {
@@ -624,10 +621,10 @@ const myno = [
                         for (let key of Object.values(global.APIKeys))
                             text = text.replace(new RegExp(key, 'g'), '#HIDDEN#')
                         if (e.name)
-                            for (let [jid] of myno.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
+                            for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                                 let data = (await conn.onWhatsApp(jid))[0] || {}
                                 if (data.exists)
-                                    m.reply(`*◈━━━━━━━━━━━━━◈*\n     *𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*\n*◈━━━━━━━━━━━━━◈*\n*🗂️ Plugin:* ${m.plugin}\n*👤 Sender:* ${m.sender}\n*💬 Chat:* ${m.chat}\n*💻 Command:* ${usedPrefix}${command} ${args.join(' ')}\n📄 *Error Logs:*\n\n\`\`\`${text}\`\`\``.trim(), data.jid)
+                                    m.reply(`*🗂️ Plugin:* ${m.plugin}\n*👤 Sender:* ${m.sender}\n*💬 Chat:* ${m.chat}\n*💻 Command:* ${usedPrefix}${command} ${args.join(' ')}\n📄 *Error Logs:*\n\n\`\`\`${text}\`\`\``.trim(), data.jid)
                             }
                         m.reply(text)
                     }
@@ -801,6 +798,45 @@ Untuk mematikan fitur ini, ketik
     }
 }
 
+global.dfail = (type, m, conn) => {
+let tag = `@${m.sender.replace(/@.+/, '')}`
+  let mentionedJid = [m.sender]
+let name = conn.getName(m.sender)
+let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
+  let nyaww = 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg'
+  let fotodaftar = 'https://telegra.ph/file/60990121dc5bcd2a376a1.jpg'
+let msg = {
+        rowner: 'Ngapain Kak?, Fitur Ini Khusus Developerku',
+        owner: 'Ngapain Kak?, Fitur Ini Khusus Ownerku',
+        mods: 'Fitur Ini Khusus Moderator',
+        premium: 'Fitur Ini Khusus Premium User',
+        group: 'Fitur Ini Hanya Bisa Digunakan Di Grup',       botAdmin: 'Jadikan Lia Sebagai Admin Terlebih Dahulu Agar Bisa Menggunakan Fitur Ini',
+        restrict: 'Restict Belum Di Nyalakan Untuk Chat Ini'}[type]
+  if (msg) return conn.sendMessage(m.chat, { image : { url : nyaww }, caption : msg }, m)
+  let daftar = {
+  unreg: 'Hai Kak, Sebelum Menggunakan Fiturku, Kamu Harus Daftar Ke Database Terlebih Dahulu\nCaranya Ketik .daftar namakamu.umurkamu\nContoh : .daftar lia.18'}[type]
+  if (daftar) return conn.sendMessage(m.chat, { image : { url : fotodaftar }, caption : daftar }, m)
+        }
+function ucapan() {
+  const time = moment.tz('Asia/Jakarta').format('HH')
+  let res = "Sudah Dini Hari Kok Belum Tidur Kak? 🥱"
+  if (time >= 4) {
+    res = "Pagi Kak 🌄"
+  }
+  if (time >= 10) {
+    res = "Selamat Siang Kak ☀️"
+  }
+  if (time >= 15) {
+    res = "Selamat Sore Kak 🌇"
+  }
+  if (time >= 18) {
+    res = "Malam Kak 🌙"
+  }
+  return res
+}
+function pickRandom(list) {
+     return list[Math.floor(Math.random() * list.length)]
+     }
 let file = global.__filename(import.meta.url, true)
 watchFile(file, async () => {
     unwatchFile(file)
