@@ -36,7 +36,12 @@ await conn.sendMessage(m.chat,  {
 
             }, m)
 await conn.sendMessage(m.chat, aliveMessage ,m)
+conn.sendMessage(m.chat, { sticker: { 
 
+                                 url: `https://github.com/Pramesh04/sup_to_ravana/raw/main/Sticker/alive.webp`,
+                                 },  
+                                 
+                                 }, m)
 
 }
 
