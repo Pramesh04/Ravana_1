@@ -22,6 +22,13 @@ let aliveMessage = {
                 footer: `*𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*`,
                 headerType: 4,
             };
+await conn.sendMessage(m.chat, { sticker: { 
+
+                                 url: `https://github.com/Pramesh04/sup_to_ravana/raw/main/Sticker/alive.webp`,
+                                 },  
+                                 
+                                 }, m)
+ 
 await conn.sendMessage(m.chat,  {
 
                 audio: {
@@ -30,18 +37,11 @@ await conn.sendMessage(m.chat,  {
 
                 },
 
-                mimetype: "audio/mpeg",
-
-                fileName: `alive.mp3`,
+                mimetype: "audio/mp4", 
+                 ptt: true,
 
             }, m)
 await conn.sendMessage(m.chat, aliveMessage ,m)
-conn.sendMessage(m.chat, { sticker: { 
-
-                                 url: `https://github.com/Pramesh04/sup_to_ravana/raw/main/Sticker/alive.webp`,
-                                 },  
-                                 
-                                 }, m)
 
 }
 
