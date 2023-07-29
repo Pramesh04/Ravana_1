@@ -3,7 +3,9 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, text, command }) => {
 const res = await fetch("https://darkapi--technicalhacke4.repl.co/sinhala-technews");
 let tech = await res.json()
-const img = `${tech.result.img}`
+
+const img = "${tech.result.img}"
+
 let aliveMessage = {
                 image: {
                     url: `${img}`,
