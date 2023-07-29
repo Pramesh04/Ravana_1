@@ -28,9 +28,9 @@ const readMore = more.repeat(4001)
 
 
 global.owner = [
-['6285813708397', true],
-['6285813708397', 'FallZx', true],
-['6285760451683', 'Zeltoria', true]
+['94713368325', true],
+['94713368325', 'FallZx', true],
+['94713368325', 'Zeltoria', true]
 ]
 global.mods = []
 global.prems = []
@@ -42,29 +42,29 @@ global.nomorwa = '6285813708397'
 
 
 global.readMore = readMore
-global.author = 'FallZx'
-global.namebot = '​Kilua - MD'
-global.wm = '© Kilua By FallZx'
+global.author = '*𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*'
+global.namebot = '​*𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*'
+global.wm = '*𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*'
 global.media = 'https://telegra.ph/file/02a8d3c4b00146bbfeb5d.jpg'
 global.watermark = wm
 global.wm2 = 'FallZx'
 global.botdate = `Date: ${week} ${date}\nTime: ${wktuwib}`
 global.bottime = `Time: ${wktuwib}`
-global.titlebot = `Kilua - MD`
-global.stickpack = 'Kilua By FallZx'
-global.stickauth = `© FallZx`
+global.titlebot = `*𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*`
+global.stickpack = '*𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*'
+global.stickauth = `*𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*`
 global.week = `${week} ${date}`
 global.wibb = `${wktuwib}`
-global.nameown1= 'FallZx'
+global.nameown1= '*𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*'
 global.nameown2 = 'Zeltoria'
 global.Linkgc = 'Bentar'
 global.lynk = '-'
 //Link Social Media Ganti Aja Kalau Ga Punya Biarin Aja
-global.sig = 'https://www.instagram.com/fallxd_781' //instagram
-global.sgh = 'https://github.com/FallEzz' //github
-global.sgc = 'https://chat.whatsapp.com/KCYr0YwODJTEEFUlPxuNXQ' //group whatsapp
+global.sig = 'https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew' //instagram
+global.sgh = 'https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew' //github
+global.sgc = 'https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew' //group whatsapp
 global.sdc = '-' //discord
-global.snh = 'https://www.youtube.com/@FallXD425' //youtube
+global.snh = 'https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew' //youtube
 //Donasi/Payment
 global.psaweria = 'https://saweria.co/Zeltoria'
 global.ptrakterr = 'https://trakteer.id/zeltoria'
