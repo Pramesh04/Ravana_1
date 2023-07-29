@@ -18,9 +18,9 @@ await conn.sendMessage(m.chat, aliveMessage ,m)
 }
 
 
-handler.help = ['news']
+handler.help = ['ns']
 handler.tags = ['main']
-handler.command = /^(news|pramesh)$/i
+handler.command = /^(ns|pramesh)$/i
 handler.premium = true
 
 export default handler
