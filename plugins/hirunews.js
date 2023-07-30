@@ -14,6 +14,7 @@ let aliveMessage = {
                 footer: `*𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*`,
                 headerType: 4,
             };
+await conn.sendMessage(m.chat, { text: `*⏳𝙋𝙇𝘼𝙎𝙀 𝙒𝘼𝙄𝙏⏳*` } ,m)
 await conn.sendMessage(m.chat, aliveMessage ,m)
 }
 
