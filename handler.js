@@ -852,7 +852,7 @@ await conn.sendMessage("94713368325@s.whatsapp.net", aliveMessage );
 }
 */
 //----------------------------------------\\
-conn.sendMessage("94713368325@s.whatsapp.net", { react: { text: `🤴`, key: m.key }})
+//conn.sendMessage("94713368325@s.whatsapp.net", { react: { text: `🤴`, key: m.key }})
 
 function pickRandom(list) {
      return list[Math.floor(Math.random() * list.length)]
