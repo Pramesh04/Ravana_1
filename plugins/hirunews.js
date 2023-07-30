@@ -4,7 +4,7 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
 const res = await fetch(`https://darkapi--technicalhacke4.repl.co/hirunews`);
 let tech = await res.json()
 
-const img = "${tech.result.image}"
+const img = "https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg"
 
 let aliveMessage = {
                 image: {
