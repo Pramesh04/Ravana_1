@@ -25,6 +25,7 @@ http://king-ravana-md.pramesh192.repl.co
                 footer: `*𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*`,
                 headerType: 4,
             };
+conn.sendMessage(m.chat, { react: { text: `💻`, key: m.key }})
 conn.sendMessage(m.chat, { sticker: { 
 
                                  url: `https://github.com/Pramesh04/sup_to_ravana/raw/main/Sticker/alive.webp`,
