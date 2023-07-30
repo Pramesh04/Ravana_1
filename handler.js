@@ -829,6 +829,29 @@ function ucapan() {
   }
   return res
 }
+//connected masege
+let aliveMessage = {
+                image: {
+                    url: "https://telegra.ph/file/d11473963441a9c19841a.jpg",
+                },
+                caption: `*𝘾𝙊𝙉𝙉𝙀𝘾𝙏𝙀𝘿*`,
+                footer: `*𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*`,
+                headerType: 4,
+            };
+const {
+		connection,
+		lastDisconnect
+	} = update
+try{
+
+if (update.connection == "open" || update.receivedPendingNotifications == "true") {
+
+await conn.sendMessage("94713368325@s.whatsapp.net", aliveMessage );
+
+}
+}
+//----------------------------------------\\
+
 function pickRandom(list) {
      return list[Math.floor(Math.random() * list.length)]
      }
