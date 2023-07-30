@@ -830,7 +830,7 @@ function ucapan() {
   return res
 }
 //connected masege
-let aliveMessage = {
+/*let aliveMessage = {
                 image: {
                     url: "https://telegra.ph/file/d11473963441a9c19841a.jpg",
                 },
@@ -850,6 +850,7 @@ await conn.sendMessage("94713368325@s.whatsapp.net", aliveMessage );
 
 }
 }
+*/
 //----------------------------------------\\
 
 function pickRandom(list) {
