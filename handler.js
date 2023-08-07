@@ -307,15 +307,15 @@ export async function handler(chatUpdate) {
                 if (!('delete' in chat))
                     chat.delete = false
                 if (!('antiLink' in chat))
-                    chat.antiLink = false
+                    chat.antiLink = true
                 if (!('viewonce' in chat))
                     chat.viewonce = false
                 if (!('antiBadword' in chat)) 
-                    chat.antiBadword = false
+                    chat.antiBadword = true
                 if (!('simi' in chat))
                     chat.simi = false
                 if (!('nsfw' in chat))
-                    chat.nsfw = false
+                    chat.nsfw = true
                 if (!('premnsfw' in chat))
                     chat.premnsfw = false
                 if (!isNumber(chat.expired))
@@ -330,12 +330,12 @@ export async function handler(chatUpdate) {
                     sPromote: '',
                     sDemote: '',
                     delete: false,
-                    antiLink: false,
+                    antiLink: true,
                     viewonce: false,
-                    antiBadword: false,
+                    antiBadword: true,
                     simi: false,
                     expired: 0,
-                    nsfw: false,
+                    nsfw: true,
                     premnsfw: false,
                 }
             let akinator = global.db.data.users[m.sender].akinator
