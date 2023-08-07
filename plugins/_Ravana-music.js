@@ -1,6 +1,11 @@
 /*
             *𝗞𝙸𝙽𝙶 𝗥𝙰𝚅𝙰𝙽𝙰 𝗠𝗗*
 */
+import fetch from 'node-fetch'
+
+import yts from 'yt-search'
+
+
 let handler = async (m, { conn, usedPrefix, text, command }) => {
 let yts = require("yt-search")
 let search = await yts(text)
